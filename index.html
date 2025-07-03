@@ -6,27 +6,51 @@
   <title>Edelweiss</title>
   <style>
     body {
+      margin: 0;
       font-family: sans-serif;
       background: #111;
       color: #eee;
       text-align: center;
-      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      padding: 20px;
     }
-    img {
-      max-width: 200px;
-      border-radius: 20px;
+    .logo {
+      width: 100%;
+      max-height: 60vh;
+      object-fit: cover;
+      border-radius: 0;
+    }
+    h1 {
+      margin-top: 30px;
+      font-size: 2.5em;
+    }
+    p {
+      margin-top: 5px;
+      margin-bottom: 20px;
+    }
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
     }
     .links a {
-      display: block;
-      margin: 10px auto;
       color: #0ff;
       text-decoration: none;
-      font-size: 20px;
+      font-size: 1.2em;
+      display: inline-block;
+      padding: 5px 10px;
+    }
+    .links a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <img src="logo.png" alt="Edelweiss logo" />
+  <img src="logo.png" alt="Edelweiss logo" class="logo" />
   <h1>Edelweiss</h1>
   <p>Музыка. Душа. Свобода.</p>
   <div class="links">
