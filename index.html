@@ -5,59 +5,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Edelweiss</title>
   <style>
-    body {
+    * {
+      box-sizing: border-box;
       margin: 0;
+      padding: 0;
+    }
+    body, html {
+      height: 100%;
       font-family: sans-serif;
-      background: #111;
+    }
+    .hero {
+      background: url('logo.png') no-repeat center center/cover;
+      height: 100vh;
       color: #eee;
-      text-align: center;
       display: flex;
       flex-direction: column;
+      justify-content: center;
       align-items: center;
-      justify-content: flex-start;
-      min-height: 100vh;
+      text-align: center;
       padding: 20px;
-    }
-    .logo {
-      width: 100%;
-      max-height: 60vh;
-      object-fit: cover;
-      border-radius: 0;
+      background-attachment: fixed;
     }
     h1 {
-      margin-top: 30px;
-      font-size: 2.5em;
+      font-size: 3em;
+      margin-bottom: 10px;
+      text-shadow: 0 2px 5px rgba(0,0,0,0.7);
     }
     p {
-      margin-top: 5px;
+      font-size: 1.2em;
       margin-bottom: 20px;
-    }
-    .links {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
+      text-shadow: 0 2px 5px rgba(0,0,0,0.6);
     }
     .links a {
       color: #0ff;
       text-decoration: none;
       font-size: 1.2em;
+      margin: 8px 0;
       display: inline-block;
-      padding: 5px 10px;
+      padding: 4px 8px;
+      background: rgba(0,0,0,0.5);
+      border-radius: 5px;
+      transition: background 0.3s ease;
     }
     .links a:hover {
-      text-decoration: underline;
+      background: rgba(0,0,0,0.7);
     }
   </style>
 </head>
 <body>
-  <img src="logo.png" alt="Edelweiss logo" class="logo" />
-  <h1>Edelweiss</h1>
-  <p>Музыка. Душа. Свобода.</p>
-  <div class="links">
-    <a href="https://instagram.com/твоя_ссылка" target="_blank">Instagram</a>
-    <a href="https://t.me/твоя_ссылка" target="_blank">Telegram</a>
-    <a href="https://www.tiktok.com/@tattoo_zmrok" target="_blank">TikTok</a>
-    <a href="mailto:contact@edelweiss.world">contact@edelweiss.world</a>
+  <div class="hero">
+    <h1>Edelweiss</h1>
+    <p>Музыка. Душа. Свобода.</p>
+    <div class="links">
+      <a href="https://instagram.com/твоя_ссылка" target="_blank">Instagram</a><br>
+      <a href="https://t.me/твоя_ссылка" target="_blank">Telegram</a><br>
+      <a href="https://www.tiktok.com/@tattoo_zmrok" target="_blank">TikTok</a><br>
+      <a href="mailto:contact.edelweissmusic@gmail.com">contact@edelweiss.world</a>
+    </div>
   </div>
 </body>
 </html>
